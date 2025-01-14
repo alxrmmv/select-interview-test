@@ -1,4 +1,4 @@
-import React, { CSSProperties } from "react";
+import React from "react";
 
 import { cn } from "@/lib/utils";
 
@@ -37,7 +37,7 @@ const ShimmerButton = React.forwardRef<HTMLButtonElement, ShimmerButtonProps>(
         {/* Highlight */}
         <div
           className={cn(
-            "absolute inset-0 size-full",
+            "absolute inset-[2px]",
             "rounded-2xl px-4 py-1.5 text-sm font-medium",
             // transition
             "transform-gpu transition-all duration-200 ease-in-out",
@@ -65,28 +65,3 @@ const ShimmerButton = React.forwardRef<HTMLButtonElement, ShimmerButtonProps>(
 ShimmerButton.displayName = "ShimmerButton";
 
 export default ShimmerButton;
-
-/* Button */
-
-// /* Auto layout */
-// display: flex;
-// flex-direction: row;
-// justify-content: center;
-// align-items: center;
-// padding: 5px 14px;
-// gap: 8px;
-
-// width: 190.5px;
-// height: 31px;
-
-// /* Card Fill */
-// background: radial-gradient(88.41% 100% at 49.87% 0%, #3B3F5A 0%, #18182B 57.5%);
-// box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.7), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
-// backdrop-filter: blur(7.5px);
-// /* Note: backdrop-filter has minimal browser support */
-// border-radius: 100px;
-
-// /* Inside auto layout */
-// flex: none;
-// order: 0;
-// flex-grow: 0;
