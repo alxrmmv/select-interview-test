@@ -1,7 +1,7 @@
 import { ChevronRightIcon } from "lucide-react";
-import { Button } from "../ui/button";
-import BookDemoButton from "./book-demo-button";
-import ShimmerButton from "../ui/shimmer-button";
+import { Button } from "../../../components/ui/button";
+import BookDemoButton from "@/components/site/book-demo-button";
+import ShimmerButton from "@/components/ui/shimmer-button";
 import Image from "next/image";
 
 function Hero() {
@@ -46,7 +46,7 @@ function Hero() {
         alt="Hero Image"
         width={1800}
         height={1800}
-        className="transform -translate-y-[40px]"
+        className="transform -translate-y-[5%]"
       />
     </section>
   );

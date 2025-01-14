@@ -48,6 +48,7 @@ export default {
         },
       },
       borderRadius: {
+        xl: "calc(var(--radius) * 1.5)",
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
@@ -57,6 +58,8 @@ export default {
       animation: {
         "shimmer-slide": "shimmer-slide 2s ease-in-out infinite alternate",
         "spin-around": "spin-around 4s infinite linear",
+        marquee: "marquee var(--duration) infinite linear",
+        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
       },
       keyframes: {
         "shimmer-slide": {
@@ -78,23 +81,30 @@ export default {
             transform: "translateZ(0) rotate(360deg)",
           },
         },
+        marquee: {
+          from: {
+            transform: "translateX(0)",
+          },
+          to: {
+            transform: "translateX(calc(-100% - var(--gap)))",
+          },
+        },
+        "marquee-vertical": {
+          from: {
+            transform: "translateY(0)",
+          },
+          to: {
+            transform: "translateY(calc(-100% - var(--gap)))",
+          },
+        },
       },
     },
     screens: {
       sm: "640px",
-      // => @media (min-width: 640px) { ... }
-
       md: "768px",
-      // => @media (min-width: 768px) { ... }
-
       lg: "1024px",
-      // => @media (min-width: 1024px) { ... }
-
       xl: "1280px",
-      // => @media (min-width: 1280px) { ... }
-
       "2xl": "1440px",
-      // => @media (min-width: 1536px) { ... }
     },
   },
   //   plugins: [require("tailwindcss-animate")],

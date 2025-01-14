@@ -1,5 +1,5 @@
-import Hero from "@/components/site/hero";
-import TestimonialsSection from "@/components/site/testimonials-section";
+import Hero from "./hero-section";
+import TestimonialsSection from "./testimonials-section";
 
 export default function Home() {
   return (

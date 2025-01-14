@@ -1,8 +1,4 @@
-import { ChevronRightIcon } from "lucide-react";
-import { Button } from "../ui/button";
-import BookDemoButton from "./book-demo-button";
-import ShimmerButton from "../ui/shimmer-button";
-import Image from "next/image";
+import { Testimonials } from "../../../components/site/testimonials";
 
 function TestimonialsSection() {
   return (
@@ -18,6 +14,7 @@ function TestimonialsSection() {
             of Snowflake users
           </h2>
         </div>
+        <Testimonials />
       </div>
     </section>
   );
