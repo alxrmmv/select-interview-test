@@ -4,6 +4,8 @@ import BookDemoButton from "@/components/site/book-demo-button";
 import ShimmerButton from "@/components/ui/shimmer-button";
 import Image from "next/image";
 
+import heroImage from "../../../../public/hero-image.webp";
+
 function Hero() {
   return (
     <section className="container mx-auto px-24 mt-6">
@@ -42,10 +44,8 @@ function Hero() {
         </div>
       </div>
       <Image
-        src="/hero-image.webp"
+        src={heroImage}
         alt="Hero Image"
-        width={1400}
-        height={900}
         className="transform -translate-y-[5%]"
       />
     </section>
