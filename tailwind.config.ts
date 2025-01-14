@@ -54,6 +54,47 @@ export default {
         xs: "calc(var(--radius) - 6px)",
         "2xs": "calc(var(--radius) - 8px)",
       },
+      animation: {
+        "shimmer-slide": "shimmer-slide 2s ease-in-out infinite alternate",
+        "spin-around": "spin-around 4s infinite linear",
+      },
+      keyframes: {
+        "shimmer-slide": {
+          to: {
+            transform: "translate(calc(100cqw - 100%), 0)",
+          },
+        },
+        "spin-around": {
+          "0%": {
+            transform: "translateZ(0) rotate(0)",
+          },
+          "15%, 35%": {
+            transform: "translateZ(0) rotate(90deg)",
+          },
+          "65%, 85%": {
+            transform: "translateZ(0) rotate(270deg)",
+          },
+          "100%": {
+            transform: "translateZ(0) rotate(360deg)",
+          },
+        },
+      },
+    },
+    screens: {
+      sm: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      xl: "1280px",
+      // => @media (min-width: 1280px) { ... }
+
+      "2xl": "1440px",
+      // => @media (min-width: 1536px) { ... }
     },
   },
   //   plugins: [require("tailwindcss-animate")],

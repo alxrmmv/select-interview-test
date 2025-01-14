@@ -5,7 +5,7 @@ import BookDemoButton from "./book-demo-button";
 
 function Header() {
   return (
-    <header className="container mx-auto ">
+    <header className="container mx-auto px-20">
       <div className="flex items-center justify-between border border-border rounded-md py-3 px-4 my-4">
         <Logo />
         <Navbar />
