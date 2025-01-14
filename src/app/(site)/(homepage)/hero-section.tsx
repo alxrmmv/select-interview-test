@@ -46,6 +46,9 @@ function Hero() {
       <Image
         src={heroImage}
         alt="Hero Image"
+        loading="eager"
+        priority={true}
+        // placeholder="blur"
         className="transform -translate-y-[5%]"
       />
     </section>
