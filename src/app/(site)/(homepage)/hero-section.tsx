@@ -42,10 +42,10 @@ function Hero() {
         </div>
       </div>
       <Image
-        src="/hero-image.png"
+        src="/hero-image.webp"
         alt="Hero Image"
-        width={1800}
-        height={1800}
+        width={1400}
+        height={900}
         className="transform -translate-y-[5%]"
       />
     </section>
