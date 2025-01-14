@@ -53,23 +53,3 @@ function Hero() {
 }
 
 export default Hero;
-
-// /* Button */
-
-// /* Auto layout */
-// display: flex;
-// flex-direction: row;
-// justify-content: center;
-// align-items: center;
-// padding: 5px 14px;
-// gap: 8px;
-
-// width: 190.5px;
-// height: 31px;
-
-// /* Card Fill */
-// background: radial-gradient(88.41% 100% at 49.87% 0%, #3B3F5A 0%, #18182B 57.5%);
-// box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.7), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
-// backdrop-filter: blur(7.5px);
-// /* Note: backdrop-filter has minimal browser support */
-// border-radius: 100px;
