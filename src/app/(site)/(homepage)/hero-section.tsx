@@ -6,7 +6,7 @@ import Image from "next/image";
 
 function Hero() {
   return (
-    <section className="container mx-auto px-24">
+    <section className="container mx-auto px-24 mt-6">
       <div className="relative glow-gradient">
         <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center py-20 relative">
           <div className="flex flex-col items-center justify-center gap-6">

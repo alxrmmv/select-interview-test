@@ -5,7 +5,7 @@ import { ThemeProvider } from "@/components/ui/theme-provider";
 
 const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-sans",
 });
 
 export const metadata: Metadata = {
